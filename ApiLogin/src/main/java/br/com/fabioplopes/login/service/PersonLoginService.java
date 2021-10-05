@@ -31,7 +31,7 @@ public class PersonLoginService implements UserDetailsService {
 				builder.roles("user");
 			}
 		} catch (Exception e) {
-			throw new UsernameNotFoundException("Usu�rio n�o encontrado!");
+			throw new UsernameNotFoundException("Usuário não encontrado!");
 		}
 		return builder.build();
 	}
